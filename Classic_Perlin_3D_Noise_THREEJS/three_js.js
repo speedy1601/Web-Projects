@@ -209,7 +209,7 @@ function practice_shader_programming() {
 
             float custom_smoothstep(float edge0, float edge1, float x) {
                 if(x < edge0 || x > edge1)
-                    return x;
+                    return x; // smoothstep() returns 0 if x < edge0, 1 if x > edge1. But we want to return x itself.
                 return 1.0 - smoothstep(edge0, edge1, x);
             }
 
