@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Strips on a Sphere</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #181818; }
+        canvas { display: block; }
+    </style>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/modifiers/CurveModifier.js"></script> -->
+
+    <!-- three-bvh-csg relies on the three-mesh-bvh library to function. to use  three-bvh-csg import three-mesh-bvh too. -->
+    <!-- "three/webgpu": "https://unpkg.com/three@0.173/build/three.webgpu.js",
+          "three/tsl": "https://unpkg.com/three@0.173/build/three.tsl.js"-->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.173/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.173/examples/jsm/",
+            "three/examples/jsm/": "https://unpkg.com/three@0.173/examples/jsm/",
+            "three-mesh-bvh": "https://unpkg.com/three-mesh-bvh@0.7.4/build/index.module.js",
+            "three-bvh-csg": "https://unpkg.com/three-bvh-csg@0.0.17/build/index.module.js",
+            "three-subdivide": "https://cdn.jsdelivr.net/npm/three-subdivide@1.1.5/build/index.module.js"
+        }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- <canvas id="canvas_1"> </canvas> -->
+
+<script type="module" src="three_js.js"> </script>
+</body>
+</html>
