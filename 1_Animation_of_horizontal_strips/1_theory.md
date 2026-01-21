@@ -14,5 +14,5 @@ created that smoothstep_for_gradient() function in fragmentShader. Then for Fig 
 
 What I did is, instead of going 0 ... 1, and then 0 ... 1 and so on which creates straight diagonal lines (Fig D) that potentially introduce jagginess because right after 1(pure cyan color) there is 0(pure blue color), now it goes 0 ... 0.95, 1.0 ... 0.0 and then 0 ... 0.95, 1.0 ... 0.0 and so on : 
     
-![alt text](image.png)
+![alt text](remove_jagginess.png)
     fract() returned  Fig E, but smoothstep_for_gradient(0.95, 1.0, fract(..)) created Fig F. Now even if there is jagginess in Fig F, we wouldn't be able to see it since the edgy point(1) is now a little below.
