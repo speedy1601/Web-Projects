@@ -85,6 +85,8 @@ function practice_shader_programming() {
             varying vec3 v_position; // v_ as in vertex.
             varying vec2 v_uv;
             varying vec3 v_normal;
+            varying vec3 v_world_position;
+            varying vec3 v_world_normal;
             uniform float u_time;
             varying float smooth_step_value;
 
@@ -122,6 +124,8 @@ function practice_shader_programming() {
             varying vec3 v_position;
             varying vec2 v_uv;
             varying vec3 v_normal;
+            varying vec3 v_world_position;
+            varying vec3 v_world_normal;
             uniform float u_time;
             varying float smooth_step_value;
 
