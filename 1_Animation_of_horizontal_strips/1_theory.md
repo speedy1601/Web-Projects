@@ -1,5 +1,5 @@
-The final output :
-<video controls src="output_video.mp4" title="Title"></video>
+The final output : (output_video.mp4)
+<video controls src="output_video.mp4" title="Output_Video"></video>
 
 The self-explanatory theory (At first follow Fig C -> D, then A -> B):
 ![alt text](theory.png)
